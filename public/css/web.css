@@ -1,0 +1,30 @@
+body {
+	background: #b6b6b6;
+}
+.navbar-top {
+	background: #033145 !important;
+}
+.navbar {
+	border-radius: 0;
+	border: 0;
+	margin-bottom: 0;
+}
+.navbar-top a {
+	color: #fff !important;
+	border-top: 3px solid  #033145;
+}
+.navbar-top a:hover {
+	background: #f8f8f8 !important;
+	color: #033145 !important;
+	border-top: 3px solid  #Ce4844;
+}
+.navbar-top .active {
+	background: #e7e7e7 !important;
+	color: #033145 !important;
+	border-top: 3px solid  #Ce4844;
+}
+
+.carousel-caption {
+	font-size: 15px;
+	margin-bottom: 25px;
+}
