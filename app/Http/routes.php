@@ -20,3 +20,7 @@ Route::get('/', 'IndexController@index');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('adm', function() {
+	return view('admin.index');
+});
