@@ -21,6 +21,14 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('adm', function() {
-	return view('admin.index');
+
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::group(['middleware' => 'admin'], function () {
+		Route::get('adm', function() {
+			return view('admin.index');
+		});
+
+	});
+
 });
